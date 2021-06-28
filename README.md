@@ -41,3 +41,10 @@ Após criar o ambiente virtual, se você estiver no prompt de comando (shell, te
 ```bash
 venv/bin/activate
 ```
+## Instalando dependências
+
+Para instalar dependências, basta usar o comando:
+
+```bash
+pip install -r requirements.txt
+```
