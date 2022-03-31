@@ -48,3 +48,23 @@ Para instalar dependências, basta usar o comando:
 ```bash
 pip install -r requirements.txt
 ```
+
+## Configurando sistema
+
+É necessário um email Google com o "Less secure apps" ativado, podendo
+ser ativado com o seguinte tutorial: 
+
+https://www.youtube.com/watch?v=Ee7PDsbfOUI
+
+Após isso, coloca-se o email e a senha no env do projeto.
+
+## Iniciando o programa
+
+Para iniciar a aplicação, basta executar:
+
+```bash
+python manage.py runserver
+```
+
+
+
