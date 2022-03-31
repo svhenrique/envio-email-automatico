@@ -1,7 +1,10 @@
 from django import forms
+from decouple import config
 from django.core.mail.message import EmailMessage
 from .validators import validate_email_textarea, validate_file_size
 
+print(config('EMAIL'))
+print(config('PASSWORD'))
 class EmailForm(forms.Form):
     nome = forms.CharField(label='Nome', max_length=150)
     assunto = forms.CharField(label='Assunto', max_length=100)
@@ -20,7 +23,7 @@ class EmailForm(forms.Form):
         mail = EmailMessage(
             subject = f'E-mail enviado pelo sistema Django - {assunto}',
             body = f"{mensagem}\nBy: {nome}",
-            from_email = '',
+            from_email = config('EMAIL'),
             to = [e for e in emails.strip().split(',')],
         )
 
