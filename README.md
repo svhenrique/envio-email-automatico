@@ -1,6 +1,10 @@
 ## Sobre
 Projeto para o envio de mensagens automatizadas para emails com django
 
+## Imagens do projeto
+
+![Image 1](images-project/tela.png)
+
 ## Configuração do ambiente 
 
 ### Clonando repositório
